@@ -1,0 +1,61 @@
+html, body{
+	height: 100%;
+}
+
+body {
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: flex;
+	-ms-flex-pack: center;
+	-webkit-box-pack: center;
+	justify-content: center;
+}
+
+.container h2 {
+	font-family: 'Ubuntu', serif;
+	font-size: 60px;
+	text-align: center;
+}
+
+.container{
+	font-family: 'Roboto', serif;
+	padding-top: 50px;
+}
+
+.jumbotron{
+	text-align: center;
+}
+
+.cover-heading{
+	font-family: 'Ubuntu', serif;
+	font-size: 70px;
+}
+
+.cover-container {
+	padding-top: 200px;
+	max-width: 42em;
+	text-align: center;
+}
+
+/*
+ * NavBar
+ */
+.navbar {
+	margin-bottom: 20px;
+}
+  
+.navbar-brand{
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: bold;
+}
+
+.navbar-header img {
+	height: 50px;
+	width: auto;
+	padding-right: 15px;
+}
+
+.navbar-nav a{
+	font-family: 'Ubuntu', Times, serif;
+	font-size: 20px;
+}
