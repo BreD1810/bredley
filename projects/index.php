@@ -2,7 +2,7 @@
 <html lang="en">
 
 <?php
-include '/var/www/include.php';
+include '/var/www/html/include.php';
 RenderHead('Projects');
 ?>
 

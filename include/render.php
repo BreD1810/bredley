@@ -5,7 +5,7 @@ function RenderNav($page)
 	?>
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
-        <div class="navbar-header">        
+        <div class="navbar-header">
             <a class="navbar-brand" href="/" style="padding-left: 30px; font-size: 30px;">Bradley Garrod</a>
             <a href="/" class="navbar-left"><img src="/images/logo.png"></a>
         </div>
@@ -23,11 +23,17 @@ function RenderNav($page)
             	<li class=\"active\"><a href=\"/projects/\">Projects</a></li>
 				<li><a href=\"/contact/\">Contact</a></li>";
 			}
-			else
+			elseif($page == "contact")
 			{
 				echo "<li><a href=\"/\">Home</a></li>
             	<li><a href=\"/projects/\">Projects</a></li>
 				<li class=\"active\"><a href=\"/contact/\">Contact</a></li>";
+			}
+			else
+			{
+				echo "<li><a href=\"/\">Home</a></li>
+            	<li><a href=\"/projects/\">Projects</a></li>
+				<li><a href=\"/contact/\">Contact</a></li>";
 			}
 			?>
         </ul>
@@ -45,7 +51,7 @@ function RenderHead($Head)
     <meta name="description" content="">
     <meta name="author" content="">
 	<link rel="icon" href="/images/favicon.ico">
-	<title><? echo $Head ?></title>
+	<title><?php echo $Head ?></title>
 	<link type="text/css" rel="stylesheet" href="/stylesheet.css"/>
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -58,9 +64,9 @@ function RenderProject($Title, $Description, $Link, $Button)
 {
 	?>
 	<div class="jumbotron">
-        <h1 style="font-size: 40px; font-family: 'Ubuntu', serif;"><? echo $Title ?></h1>
-        <p style="font-size: 20px; font-family: 'Roboto', serif;"><? echo $Description ?></p>
-        <a class = "btn btn-lg btn-primary" href="<? echo $Link ?>" role="button">Go to <? echo $Title ?></a>
+        <h1 style="font-size: 40px; font-family: 'Ubuntu', serif;"><?php echo $Title ?></h1>
+        <p style="font-size: 20px; font-family: 'Roboto', serif;"><?php echo $Description ?></p>
+        <a class = "btn btn-lg btn-primary" href="<?php echo $Link ?>" role="button">Go to <?php echo $Button ?></a>
     </div>
 	<?php
 }

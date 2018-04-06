@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <?php
-include '/var/www/include.php';
+include '/var/www/html/include.php';
 RenderHead('404 - Page not found');
 RenderNav('404');
 ?>
