@@ -3,7 +3,7 @@
 
 <?php
 include '/var/www/html/include.php';
-RenderHead('Contact');
+RenderHead('Contact', 'Get in contact with Bradley Garrod.');
 ?>
 
 <body>

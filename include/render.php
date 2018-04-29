@@ -42,19 +42,20 @@ function RenderNav($page)
 	<?php
 }
 
-function RenderHead($Head)
+function RenderHead($Head, $Desc)
 {
 	?>
 <head>
 	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    	<meta name="description" content="<?php echo $Desc ?>">
+    	<meta name="author" content="Bradley Garrod">
+	<meta name="keywords" content="Bradley Garrod, Bradley, Garrod, programming, programmer, University of Southampton, labview, logsbot, connectbot, tf2cbot">
 	<link rel="icon" href="/images/favicon.ico">
 	<title><?php echo $Head ?></title>
 	<link type="text/css" rel="stylesheet" href="/stylesheet.css"/>
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link href="/bootstrap.min.css" rel="stylesheet">
 </head>
 	<?php

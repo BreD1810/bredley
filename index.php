@@ -3,7 +3,7 @@
 
 <?php
 include '/var/www/html/include.php';
-RenderHead('Home');
+RenderHead('Home', 'Homepage for Bradley Garrod');
 ?>
 
 <body>
@@ -13,7 +13,7 @@ RenderNav('home')
 ?>
 
 <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
-<img src="/images/me.png" style="height: 300px; width: auto; text-align: center;">
+<img src="/images/me.png" alt="Bradley Garrod" style="height: 350px; width: auto; text-align: center;">
 <main role="main" class="inner cover">
     <h1 class="cover-heading">Bradley Garrod</h1>
     <p class="lead" style="font-family: 'Roboto', serif; font-size: 20px;">

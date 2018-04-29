@@ -24,8 +24,8 @@ body {
 
 /*Mobile fix*/
 @media (max-width: 767px){
-	.container{
-		padding-top: 200px;
+	.cover-container{
+		padding-top: 300px;
 	}
 }
 
@@ -39,7 +39,7 @@ body {
 }
 
 .cover-container {
-	padding-top: 200px;
+	padding-top: 130px;
 	max-width: 42em;
 	text-align: center;
 }

@@ -3,7 +3,7 @@
 
 <?php
 include '/var/www/html/include.php';
-RenderHead('Projects');
+RenderHead('Projects', 'Projects completed by Bradley Garrod.');
 ?>
 
 <body>
