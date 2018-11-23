@@ -22,10 +22,12 @@ body {
 	padding-top: 50px;
 }
 
+.cover
+
 /*Mobile fix*/
-@media (max-width: 767px){
+@media only screen and (max-width: 676px){
 	.cover-container{
-		padding-top: 300px;
+		padding-top: 1000px;
 	}
 }
 
@@ -39,7 +41,7 @@ body {
 }
 
 .cover-container {
-	padding-top: 130px;
+	padding-top: 55px;
 	max-width: 42em;
 	text-align: center;
 }
