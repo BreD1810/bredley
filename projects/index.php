@@ -19,6 +19,11 @@ RenderNav('projects');
     </div>
     <br>
     <?php
+    RenderProject("Pexip Internship Challenge", "I applied to, and received an offer for, an internship for Pexip in my second year of university. 
+    As part of the process, I had to complete a programming task, where I had to find a word of maximum length 24 within a 10000x10000 grid of characters. 
+    I found this challenge really interesting, trialling a few different solutions. I also began to experiment with different tools such as continuous 
+    integeration and unit testing.", "https://github.com/BreD1810/Pexip", "the Challenge's Code");
+
     RenderProject("CampusHack 2018", "CampusHack was a 24 hour hackathon hosted at the University of Southampton in March 2018. 
     Alongside Samuel Collins, Joel T. Parkinson and Ankur Sharma, I helped to develop a prototype for \"LabView\". This was a 
     website designed to display which PCs were logged in on the Level 3 labs of Zepler, so that you would know if it was worth 
