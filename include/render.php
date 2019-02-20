@@ -72,4 +72,27 @@ function RenderProject($Title, $Description, $Link, $Button)
 	<?php
 }
 
+function RenderBlogPreview($Title, $Date, $Preview, $Link)
+{
+	?>
+	<div class="jumbotron">
+	<h1 style="font-size: 40px; font-family: 'Ubuntu', serif;"><?php echo $Title ?> </h1>
+	<p style="font-size: 10px; font-family: 'Roboto', serif;"><?php echo $Date ?></p>
+	<p style="font-size: 20px; font-family: 'Roboto', serif"><?php echo $Preview ?></p>
+	<a class = "btn btn-lg btn-primary" href="<?php echo $Link ?>" role="button">Continue reading</a>
+	<?php
+}
+
+function RenderBlogPost($Title, $Date, $Content)
+{
+	?>
+	<div class="jumbotron">
+	<h1 style="font-size: 40px; font-family: 'Ubuntu', serif;"><?php echo $Title ?> </h1>
+	<p style="font-size: 10px; font-family: 'Roboto', serif;"><?php echo $Date ?></p>
+	<p style="font-size: 20px; font-family: 'Roboto', serif;"><?php echo $Content ?></p>
+	<a class = "btn btn-lg btn-primary" href="index.php" role="button">Return to blog</a>
+    </div>
+	<?php
+}
+
 ?>
