@@ -7,6 +7,11 @@
     border-radius: 20px;    
 }
 
+.about-text {
+    margin: 0 63% 0 0;
+}
+
+
 @media only screen and (max-width : 1050px) {
     .about-image {
         display: block !important; 
@@ -14,5 +19,9 @@
         width: 60%;
         border-radius: 10px;
         float: none;
+    }
+
+    .about-text {
+        margin: 0;
     }
 }
