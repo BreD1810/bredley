@@ -107,7 +107,7 @@ Unfortunately, this would definitely not fit the bill for a programmer's portfol
 
 Writing a website myself was a great learning exercise, but in the long run I wanted a website that was super easy to maintain, that looked great and allowed me to write content in a breeze!
 
-The [source code](https://github.com/bred1810/bredley) for this website is available on my GitHub.
+If you want to checkout the source code for this website, click [here](https://github.com/bred1810/bredley).
 
 <br>
 
