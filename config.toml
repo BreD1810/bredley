@@ -65,3 +65,9 @@ pygmentscodefencesguesssyntax = true
     name = "Contact"
     weight = 4
     url = "/contact/"
+
+# New renderer - needed to make inline HTML work
+[markup]
+    [markup.goldmark]
+        [markup.goldmark.renderer]
+            unsafe = true
