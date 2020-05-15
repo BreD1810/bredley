@@ -17,6 +17,12 @@ To demonstrate our learning of lower level hardware programming for the 'Compute
 
 Check out the code [here](https://github.com/BreD1810/fortuna-2048).
 
+## Artist Portfolio
+An up and coming artist contacted me to make a website for them!
+They use said website to advertise their art to make commissions.
+
+Check out the website [here](https:kinesart.com) and the code [here](https://gitlab.com/BreD1810/kines-portfolio).
+
 ## Connect 4
 With the hope of learning the features of C#, I set out to make the classic game 'Connect 4' with a few friends from university. This began as a simple console application. However, we are hoping to expand the project to include a UWP app, and also a mobile app built with [Xamarin](https://dotnet.microsoft.com/apps/xamarin).
 
