@@ -13,7 +13,7 @@ pygmentscodefencesguesssyntax = true
 
 [params]
     author = "Bradley Garrod"
-    info = "Student developer and technology enthusiast"
+    info = "Student Developer and Technology Enthusiast"
     description = "Bradley Garrod's website"
     keywords = "blog,developer,programmer,java,university,student"
     avatarurl = "images/me.jpg"
