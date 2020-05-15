@@ -1,5 +1,5 @@
 +++
-title = "Contact Me"
+title = "Contact"
 description = "Contact Bradley Garrod"
 keywords = "Contact"
 slug = "contact"

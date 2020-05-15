@@ -1,5 +1,5 @@
 +++
-title = "About Me"
+title = "About"
 description = "About Bradley Garrod"
 keywords = "About"
 slug = "about"

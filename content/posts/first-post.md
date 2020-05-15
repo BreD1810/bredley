@@ -1,6 +1,6 @@
 +++ 
 date = "2019-08-24"
-title = "A much needed refactor"
+title = "A Much Needed Refactor"
 slug = "refactor"
 +++
 

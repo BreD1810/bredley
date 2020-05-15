@@ -1,5 +1,5 @@
 +++
-title = "My Portfolio"
+title = "Portfolio"
 description = "Bradley Garrod's Portfolio"
 keywords = "Portfolio, Projects, Code, Development"
 slug = "portfolio"
