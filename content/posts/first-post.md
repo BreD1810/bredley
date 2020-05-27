@@ -20,12 +20,12 @@ Then, when I wanted to add content, I could just write some simple markdown into
 
 At first, I stubbornly refused to go with a solution that involved so little programming.
 However, after some time at University I had grown to love writing as many things as possible in markdown - from lecture notes to README files.
-On top of that, during my time at American Express, I had noticed that a lot of the grads had loved using Hugo and [Gatsby](https://www.gatsbyjs.org/) - another static site generator.
+On top of that, during my time at American Express, I had noticed that a lot of the graduates had loved using Hugo and [Gatsby](https://www.gatsbyjs.org/) - another static site generator.
 So many months later, I finally took the plunge and made this website using Hugo.
 
 ## Using Hugo
 
-Once I had downloaded Hugo, setting up my website was really easy. 
+Once I had downloaded Hugo, setting up my website was really easy.
 I first ran a command to make the file structure I needed.
 ```
 hugo new site <site-name>
@@ -91,7 +91,8 @@ Previously, I had to edit my pages, save and then refresh my browser to see my c
 This meant that if I had an error in my code, it took me a longer time to see it displayed.
 With Hugo, if there is an error then I see it in under a second.
 Hugo also makes it really nice for me to develop the website without worrying about having it in the live environment.
-Previously, I used the PHP installation on my Linux server running the website instead of installing it on my local machine. This was lazy of me, I know, but Hugo just needs me to install a package or download an executable!
+Previously, I used the PHP installation on my Linux server running the website instead of installing it on my local machine.
+This was lazy of me, I know, but Hugo just needs me to install a package or download an executable!
 
 I learnt a lot writing my own site, and no doubt that experience will prove valuable at some point in my career.
 It even proved worthwhile when I wanted to tweak the template for my Hugo site!
@@ -111,4 +112,5 @@ The [source code](https://github.com/bred1810/bredley) for this website is avail
 
 <br>
 
-[^1]: Thanks to Dan for recommending that I check out Hugo :smiley:. Make sure you check out his [site](https://trickey.io/) (also built with Hugo)!
+[^1]: Thanks to Dan for recommending that I check out Hugo :smiley:.
+Make sure you check out his [site](https://trickey.io/) (also built with Hugo)!
