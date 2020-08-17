@@ -40,7 +40,7 @@ I finally settled on a theme called [Coder](https://themes.gohugo.io/hugo-coder/
 
 To add a page, I simply had to add a markdown file to the `content` directory.
 To add it to the website's navigation, I had to add a block to the config.
-```
+```toml
 [[menu.main]]
     name = "About Me"
     weight = 1
@@ -103,6 +103,68 @@ Besides, now that I have the basics of web languages under my belt, I should be 
 Many years ago, I also tried to use website creators such as [WordPress](https://wordpress.com/) and [Moonfruit](https://www.moonfruit.com/).
 This was great when I wanted to just post some content to the internet, especially as they make create a blog so easy.
 Unfortunately, this would definitely not fit the bill for a programmer's portfolio!
+
+
+## Update - Docker!
+
+In late 2020, I migrated my server to a new machine.
+I made the decision to move my website to a Docker container for easier maintainability.
+To do this, I first had to create a Dockerfile:
+```dockerfile
+from alpine:latest
+
+RUN apk update && apk upgrade && apk add hugo
+
+RUN mkdir /src
+
+EXPOSE 80
+
+ENTRYPOINT ["hugo", "server", "--source=/src", "--bind=0.0.0.0", "--port=80", "--disableLiveReload=true", "--watch=true"]
+
+```
+This simply takes the base alpine image (which is very lightweight), updates the packages and installs `hugo`.
+A directory is created to contain the website files, and port 80 is exposed so that we can connect the container to the outside world.
+Finally, the `ENTRYPOINT` line is used to define the command that should be run when the container is executed.
+The `bind` switch is set to `0.0.0.0`, so that it can accessed outside of the container, and the port is set to match the one exposed.
+The `watch` switch means that whenever the source files are updated, the website updates when the user refreshes the page.
+
+This docker image can be run in one of two ways.
+Firstly, it can be run using `docker run`:
+
+```bash
+docker run -it --rm -p 80:80 -v $(pwd):/src cr.bredley.co.uk/bred/website
+```
+
+This maps port 80 inside of the container to port 80 on the host system.
+It also maps the current working directory to `/src` inside of the container.
+
+More conveniently, a compose file (`docker-compose.yml`) can be used.
+This creates a "bredley" service, which can be brought up by running `docker-compose up -d`.
+
+```yaml
+version: '3'
+
+services:
+  bredley:
+    image: cr.bredley.co.uk/bred/website
+    #image: registry.gitlab.com/bred1810/website
+    container_name: bredley
+    command: ["--baseURL=https://bredley.co.uk", "--appendPort=false"]
+    expose:
+      - "80"
+    volumes:
+      - /path/to/site/:/src
+    restart: unless-stopped
+    networks:
+      - dockernet
+
+networks:
+  dockernet:
+```
+
+There are [many advantages](https://dzone.com/articles/top-10-benefits-of-using-docker) to Dockerizing services, but I love how easy it is to update my website.
+I simply have to pull my git repository, and the updates are live on the internet!
+
 
 ## Conclusion
 
