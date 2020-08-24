@@ -1,4 +1,4 @@
-+++
+a+++
 title = "Portfolio"
 description = "Bradley Garrod's Portfolio"
 keywords = "Portfolio, Projects, Code, Development"
@@ -19,6 +19,14 @@ I created an API, which I run on my server, so that we all get access to the sam
 All of the technologies I used for the project were new: [React Native](https://reactnative.dev) to build the mobile app, and [Golang](https://golang.org/) for the API.
 
 I certainly learned a lot from building this app, and I hope to continue to develop and maintain it in the future!
+
+## GLab <a href="https://github.com/profclems/glab"><i class="fab fa-github portfolio-icon"></i></a>
+
+I discovered GLab, a CLI tool for GitLab written in golang, on YCombinator news.
+I have used the [GitHub CLI](https://github.com/cli/cli) a lot in the past, and thought this would be a really useful tool.
+As it was relatively new, I helped to create (and co-maintain) an [AUR package](https://aur.archlinux.org/packages/gitlab-glab-bin/) for GLab.
+I then took on some issues for the repo, and even added functionality for aliases.
+I hope to continue to make contributions to the project.
 
 
 ## Artist Portfolio <a href="https://github.com/BreD1810/kines-portfolio"><i class="fab fa-github portfolio-icon"></i></a>
