@@ -47,6 +47,12 @@ pygmentscodefencesguesssyntax = true
     icon = "fab fa-linkedin"
     weight = 3
     url = "https://www.linkedin.com/in/bradley-garrod-861283175/"
+[[params.social]]
+    name = "Buy Me a Coffee"
+    icon = "fas fa-coffee"
+    weight = 4
+    url = "https://www.buymeacoffee.com/BreD1810"
+
 
 # Menu links
 [[menu.main]]
